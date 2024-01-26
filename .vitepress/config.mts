@@ -19,7 +19,8 @@ export default defineConfig({
           text: '文章',
           collapsed: false,
           items: [
-            { text: 'Hello, World!', link: '/blog/20240125' }
+            { text: 'Hello, World!', link: '/blog/20240125' },
+            { text: 'JavaScript的原型与原型链', link: '/blog/20240126' },
           ]
         }
       ],
