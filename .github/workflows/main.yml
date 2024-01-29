@@ -1,0 +1,47 @@
+name: Deploy Blog Website
+
+on:
+  push:
+    # 指定分支触发
+    branches:
+      - master
+
+# 推送后执行一系列任务
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 迁出代码
+        uses: actions/checkout@main
+      - name: 安装 Nodejs
+        uses: actions/setup-node@main
+        with:
+          node-version: lts/*
+      - name: 安装依赖
+        run: npm install
+      - name: 打包
+        run: npm run docs:build
+      - name: 发布到阿里云
+        uses: easingthemes/ssh-deploy@main
+        env:
+          # 私钥
+          SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+          # SCP参数
+          ARGS: '-avzr --delete'
+          # 源目录
+          SOURCE: '.vitepress/dist/'
+          # 服务器IP
+          REMOTE_HOST: ${{ secrets.REMOTE_ALIYUN_HOST }}
+          # 用户
+          REMOTE_USER: 'root'
+          # 目标地址
+          TARGET: '/home/deploy/blog/'
+          # 重新加载nginx
+          SCRIPT_AFTER: |
+            nginx -s reload
+      # - name: ServerChan · Server酱通知
+      #   uses: easychen/github-action-server-chan@v1.0.0
+      #   with:
+      #     sendkey: ${{ secrets.SEND_KEY }}
+      #     title: "服务部署成功"
+        
