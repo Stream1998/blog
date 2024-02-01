@@ -39,9 +39,9 @@ jobs:
           # 重新加载nginx
           SCRIPT_AFTER: |
             nginx -s reload
-       - name: ServerChan · Server酱通知
-         uses: easychen/github-action-server-chan@v1.0.0
-         with:
-           sendkey: ${{ secrets.SEND_KEY }}
-           title: "服务部署成功"
+      - name: ServerChan · Server酱通知
+        uses: easychen/github-action-server-chan@v1.0.0
+        with:
+          sendkey: ${{ secrets.SEND_KEY }}
+          title: "服务部署成功"
         
