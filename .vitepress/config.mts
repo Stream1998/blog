@@ -22,6 +22,7 @@ export default defineConfig({
             { text: 'Hello, World!', link: '/blog/20240125' },
             { text: 'JavaScript的原型与原型链', link: '/blog/20240126' },
             { text: 'JavaScript的浅拷贝与深拷贝', link: '/blog/20240129' },
+            { text: 'React中常用的Hook', link: '/blog/20240201' },
           ]
         }
       ],
