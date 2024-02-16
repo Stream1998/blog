@@ -29,6 +29,7 @@ export default defineConfig({
             { text: 'JavaScript的浅拷贝与深拷贝', link: '/blog/20240129' },
             { text: 'React中常用的Hook', link: '/blog/20240201' },
             { text: '从零实现pinia', link: '/blog/20240215' },
+            { text: 'Windows安装Docker Desktop并迁移', link: '/blog/20240216' },
           ]
         }
       ],
