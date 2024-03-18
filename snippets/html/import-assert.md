@@ -1,4 +1,4 @@
-# import asserts
+# import assert
 
 [如何像导入 JS 模块一样导入 CSS？](https://cloud.tencent.com/developer/article/1879171)
 

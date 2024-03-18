@@ -36,7 +36,7 @@ export default defineConfig({
       ],
       "/snippets/": [
         {
-          text: "代码",
+          text: "代码片段",
           collapsed: false,
           items: [
             {

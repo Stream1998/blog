@@ -15,4 +15,10 @@
 .className:nth-child(3n + 2) {
   margin: 0 16upx;
 }
+/* 选择第 1 项到第 7 项 */
+.classname:nth-child(-n + 7) {
+}
+/* 选择第 7 项开始 */
+.classname:nth-child(n + 7) {
+}
 ```
