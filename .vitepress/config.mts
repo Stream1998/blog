@@ -14,7 +14,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/" },
-      { text: "Blog", link: "/blog/20240322" },
+      { text: "Blog", link: "/blog/20240326" },
       { text: "Snippets", link: "/snippets/html/contextmenu" },
       { text: "Note", link: "/note/markdown-examples" },
     ],
@@ -32,6 +32,7 @@ export default defineConfig({
             { text: "从零实现pinia", link: "/blog/20240215" },
             { text: "Windows安装Docker Desktop并迁移", link: "/blog/20240216" },
             { text: "Nodejs 插件的编写与使用", link: "/blog/20240322" },
+            { text: "使用 computed 代理 v-model", link: "/blog/20240326" },
           ],
         },
       ],

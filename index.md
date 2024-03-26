@@ -7,6 +7,11 @@ hero:
   text: "\n"
   tagline: 心有所向，日复一日，必有精进
 
+  actions:
+    - theme: brand
+      text: 个人介绍
+      link: /blog/20240125
+
 features:
   - icon: 📘
     title: Blog
