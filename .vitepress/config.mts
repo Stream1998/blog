@@ -120,6 +120,7 @@ export default defineConfig({
                 { text: "参数非空检测", link: "/snippets/js/parameter-check" },
                 { text: "表单请求", link: "/snippets/js/form-request" },
                 { text: "scroll", link: "/snippets/js/scroll" },
+                { text: "promise", link: "/snippets/js/promise" },
               ],
             },
             {
