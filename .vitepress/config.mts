@@ -47,6 +47,7 @@ export default defineConfig({
               items: [
                 { text: "右键菜单", link: "/snippets/html/contextmenu" },
                 { text: "iframe", link: "/snippets/html/iframe" },
+                { text: "汉字注音", link: "/snippets/html/ruby" },
                 { text: "转义字符", link: "/snippets/html/escape" },
                 { text: "增加焦点", link: "/snippets/html/tabindex" },
                 { text: "网页自动刷新", link: "/snippets/html/refresh" },
